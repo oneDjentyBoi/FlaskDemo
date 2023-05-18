@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Comment List</title>
+{% endblock %}
+
+
+{% block body %}
+<div class="container">
+    <div>
+        {% for comment in comments%}
+            <div>
+                {{comment.name}}
+            </div>
+        <br>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
